@@ -65,7 +65,7 @@ describe("#wordSearch()", function() {
   });
 
   it("should return false if letters include anything but an array", function() {
-    const result = wordSearch([["B2",2,3], ["2", 1, "b"], [1,2,4]], 'FRANK')
+    const result = wordSearch([["A","B","C"], ["A", "B", "C"], "[A,B,C]"], 'FRANK')
     assert.isFalse(result);
   });
 
